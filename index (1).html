@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKS Club | Bhagni Khoj Sports Club — Nepal</title>
+<meta name="description" content="BKS CLUB (Bhagni Khoj Sports Club) is a youth-led cultural and sports organization in Nepal preserving tradition, promoting sportsmanship, and building community through Deusi-Bhailo, football, and social service.">
+<meta name="keywords" content="BKS Club, Bhagni Khoj Sports Club, Nepal youth club, Deusi Bhailo, football tournament Nepal, Nepali culture, community service Nepal">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bksclub.org.np/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="BKS Club — Bhagni Khoj Sports Club, Nepal">
+<meta property="og:description" content="Empowering youth through sports, culture, and community service in Nepal.">
+<meta property="og:image" content="https://bksclub.org.np/og-image.jpg">
+<meta property="og:url" content="https://bksclub.org.np/">
+<meta property="og:locale" content="en_NP">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BKS Club — Bhagni Khoj Sports Club, Nepal">
+<meta name="twitter:description" content="Empowering youth through sports, culture, and community service in Nepal.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "BKS Club (Bhagni Khoj Sports Club)",
+  "url": "https://bksclub.org.np/",
+  "logo": "https://bksclub.org.np/logo.png",
+  "description": "A youth-led cultural and sports organization in Nepal dedicated to preserving Nepali traditions, promoting sportsmanship, leadership, and community engagement.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bhagni Khoj",
+    "addressLocality": "Kathmandu",
+    "addressCountry": "NP"
+  },
+  "sameAs": [
+    "https://facebook.com/bksclub",
+    "https://instagram.com/bksclub",
+    "https://tiktok.com/@bksclub",
+    "https://youtube.com/@bksclub"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --red:#C8102E;
+  --red-dark:#960C22;
+  --navy:#0B1F3F;
+  --navy-2:#142C54;
+  --white:#FDFCFA;
+  --gold:#C89B4C;
+  --ink:#171522;
+  --gray:#6B7280;
+  --bg:var(--white);
+  --surface:#ffffff;
+  --surface-2:#F5F3EE;
+  --text:var(--ink);
+  --text-soft:#5B5866;
+  --border:rgba(11,31,63,0.10);
+  --shadow:0 20px 45px -20px rgba(11,31,63,0.25);
+  --radius:22px;
+}
+[data-theme="dark"]{
+  --bg:#080D1A;
+  --surface:#0F1729;
+  --surface-2:#111C33;
+  --text:#F3F1EA;
+  --text-soft:#AEB4C4;
+  --border:rgba(255,255,255,0.10);
+  --shadow:0 25px 55px -20px rgba(0,0,0,0.6);
+}
+*{box-sizing:border-box; scroll-behavior:smooth;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'Inter',sans-serif; transition:background .4s ease, color .4s ease;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.font-display{font-family:'Fraunces',serif;}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--red); font-weight:600;
+}
+.container{max-width:1240px; margin:0 auto; padding:0 24px;}
+img{max-width:100%; display:block;}
+a{color:inherit;}
+::selection{background:var(--red); color:#fff;}
+
+/* ============ MOTIF: Dhaka triangle divider ============ */
+.dhaka-divider{
+  width:100%; height:14px;
+  background-image: repeating-linear-gradient(45deg, var(--red) 0, var(--red) 7px, transparent 7px, transparent 14px),
+                     repeating-linear-gradient(-45deg, var(--navy) 0, var(--navy) 7px, transparent 7px, transparent 14px);
+  background-size:28px 14px, 28px 14px;
+  background-position: 0 0, 0 0;
+  opacity:.9;
+}
+[data-theme="dark"] .dhaka-divider{opacity:.7;}
+
+/* ============ NAV ============ */
+#navbar{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:rgba(253,252,250,0.85); backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  transition:all .35s ease;
+}
+[data-theme="dark"] #navbar{background:rgba(8,13,26,0.85);}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; max-width:1240px; margin:0 auto;}
+.logo{display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:800; font-size:20px; text-decoration:none;}
+.logo-mark{
+  width:40px;height:40px;border-radius:12px;
+  background:linear-gradient(135deg,var(--red),var(--navy));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:15px;
+  box-shadow:var(--shadow);
+}
+.nav-links{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+.nav-links a{
+  font-size:14.5px; font-weight:600; text-decoration:none; color:var(--text);
+  position:relative; padding:6px 0; transition:color .25s;
+}
+.nav-links a::after{
+  content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--red);
+  transition:width .3s ease;
+}
+.nav-links a:hover{color:var(--red);}
+.nav-links a:hover::after{width:100%;}
+.nav-actions{display:flex; align-items:center; gap:14px;}
+.icon-btn{
+  width:38px;height:38px;border-radius:50%; border:1px solid var(--border); background:var(--surface);
+  display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text);
+  transition:all .25s;
+}
+.icon-btn:hover{border-color:var(--red); color:var(--red); transform:translateY(-2px);}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:100px;
+  font-weight:700; font-size:14.5px; text-decoration:none; cursor:pointer; border:none;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.btn-primary{background:var(--red); color:#fff; box-shadow:0 12px 25px -8px rgba(200,16,46,0.55);}
+.btn-primary:hover{transform:translateY(-3px); box-shadow:0 18px 32px -8px rgba(200,16,46,0.6);}
+.btn-outline{background:transparent; border:1.5px solid var(--white); color:var(--white);}
+.btn-outline:hover{background:rgba(255,255,255,.12); transform:translateY(-3px);}
+.btn-navy{background:var(--navy); color:#fff;}
+.btn-navy:hover{transform:translateY(-3px); box-shadow:0 18px 32px -8px rgba(11,31,63,0.5);}
+.hamburger{display:none; cursor:pointer; background:none; border:none; color:var(--text); font-size:22px;}
+
+#mobile-menu{
+  position:fixed; top:70px; left:0; right:0; background:var(--surface); border-bottom:1px solid var(--border);
+  padding:18px 24px; display:none; flex-direction:column; gap:14px; z-index:999; box-shadow:var(--shadow);
+}
+#mobile-menu a{text-decoration:none; color:var(--text); font-weight:600; padding:8px 0; border-bottom:1px solid var(--border);}
+
+#search-panel{
+  position:fixed; inset:0; background:rgba(8,13,26,0.7); backdrop-filter:blur(6px); z-index:2000;
+  display:none; align-items:flex-start; justify-content:center; padding-top:110px;
+}
+#search-panel.active{display:flex;}
+.search-box{width:min(560px,92vw); background:var(--surface); border-radius:20px; padding:22px; box-shadow:var(--shadow);}
+.search-box input{
+  width:100%; padding:14px 16px; border-radius:12px; border:1.5px solid var(--border); background:var(--surface-2);
+  color:var(--text); font-size:16px; outline:none;
+}
+.search-box input:focus{border-color:var(--red);}
+#search-results{margin-top:14px; max-height:300px; overflow-y:auto;}
+#search-results a{display:block; padding:10px 12px; border-radius:10px; text-decoration:none; color:var(--text); font-size:14.5px;}
+#search-results a:hover{background:var(--surface-2); color:var(--red);}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden;
+  background:radial-gradient(ellipse at 20% 0%, var(--navy-2), var(--navy) 55%, #060E20 100%);
+  padding-top:90px;
+}
+.hero-pattern{position:absolute; inset:0; opacity:.15; background-image:repeating-linear-gradient(135deg, var(--red) 0 2px, transparent 2px 34px); }
+.hero-flags{position:absolute; top:110px; left:0; right:0; z-index:1; opacity:.85;}
+.hero-inner{position:relative; z-index:3; max-width:1240px; margin:0 auto; padding:60px 24px 140px; display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center;}
+.hero-eyebrow{color:var(--gold); font-family:'JetBrains Mono',monospace; letter-spacing:.2em; text-transform:uppercase; font-size:13px; font-weight:600; display:flex; align-items:center; gap:10px;}
+.hero-eyebrow::before{content:""; width:30px; height:2px; background:var(--gold); display:inline-block;}
+.hero h1{color:#fff; font-size:clamp(42px,6.4vw,84px); line-height:0.98; margin:18px 0 6px; font-weight:900;}
+.hero h1 span{color:var(--red); display:block;}
+.hero .sub-title{color:var(--gold); font-family:'Fraunces',serif; font-style:italic; font-size:clamp(18px,2.2vw,26px); margin-bottom:20px;}
+.hero p.desc{color:#C9D2E3; font-size:17px; max-width:520px; line-height:1.7; margin-bottom:34px;}
+.hero-btns{display:flex; gap:16px; flex-wrap:wrap;}
+.hero-stats{display:flex; gap:28px; margin-top:56px; flex-wrap:wrap;}
+.hero-stat b{color:#fff; font-family:'Fraunces',serif; font-size:30px; display:block;}
+.hero-stat span{color:#93A0BC; font-size:12.5px; text-transform:uppercase; letter-spacing:.08em;}
+.hero-visual{position:relative;}
+.hero-card{
+  background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); border-radius:28px;
+  padding:26px; backdrop-filter:blur(10px); position:relative; overflow:hidden;
+}
+.hero-badge{
+  position:absolute; top:-18px; right:-18px; background:var(--red); color:#fff; width:96px; height:96px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; text-align:center; font-family:'Fraunces',serif; font-weight:800;
+  font-size:13px; line-height:1.15; box-shadow:0 15px 30px -8px rgba(200,16,46,0.6); transform:rotate(12deg);
+  animation:spin-slow 16s linear infinite;
+}
+@keyframes spin-slow{from{transform:rotate(12deg);}to{transform:rotate(372deg);}}
+.scroll-cue{position:absolute; bottom:34px; left:50%; transform:translateX(-50%); z-index:3; color:#C9D2E3; text-align:center; font-size:11px; letter-spacing:.15em; text-transform:uppercase;}
+.scroll-cue .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;margin:8px auto 0; animation:bounce-cue 1.6s infinite;}
+@keyframes bounce-cue{0%,100%{transform:translateY(0);}50%{transform:translateY(10px);}}
+
+/* ============ REVEAL ANIMATIONS ============ */
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:translateY(0);}
+.reveal-stagger > *{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease;}
+.reveal-stagger.in > *{opacity:1; transform:translateY(0);}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.12s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.19s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.26s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.33s;}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.40s;}
+.reveal-stagger.in > *:nth-child(7){transition-delay:.47s;}
+.reveal-stagger.in > *:nth-child(8){transition-delay:.54s;}
+@media (prefers-reduced-motion: reduce){
+  .reveal,.reveal-stagger>*{transition:none!important; opacity:1!important; transform:none!important;}
+  .hero-badge{animation:none;}
+}
+
+/* ============ SECTION SHELL ============ */
+section{padding:110px 0;}
+.section-head{max-width:680px; margin:0 auto 56px; text-align:center;}
+.section-head h2{font-size:clamp(30px,4vw,46px); margin:12px 0 14px; font-weight:800;}
+.section-head p{color:var(--text-soft); font-size:16.5px; line-height:1.7;}
+.bg-surface{background:var(--surface-2);}
+
+/* ============ CARDS ============ */
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.card:hover{transform:translateY(-8px); box-shadow:var(--shadow); border-color:transparent;}
+
+/* About */
+.about-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+.about-art{position:relative; border-radius:28px; overflow:hidden; aspect-ratio:4/5; background:linear-gradient(160deg,var(--navy),var(--navy-2)); display:flex; align-items:center; justify-content:center;}
+.mv-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:34px;}
+.mv-card{padding:26px; border-radius:18px; background:var(--surface-2); border:1px solid var(--border);}
+.mv-card i{color:var(--red); font-size:20px; margin-bottom:10px;}
+.mv-card ul{margin:10px 0 0; padding-left:18px; font-size:14.5px; color:var(--text-soft); line-height:1.9;}
+
+/* Activities */
+.activities-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+.activity-card{padding:30px 26px; text-align:left;}
+.activity-icon{
+  width:54px;height:54px;border-radius:16px; background:linear-gradient(135deg,var(--red),var(--red-dark));
+  display:flex; align-items:center; justify-content:center; color:#fff; font-size:22px; margin-bottom:18px;
+}
+.activity-card h3{font-size:17.5px; margin:0 0 8px;}
+.activity-card p{font-size:14px; color:var(--text-soft); line-height:1.6; margin:0;}
+
+/* Events */
+.events-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+.event-card{overflow:hidden;}
+.event-img{height:190px; background:linear-gradient(135deg,var(--navy),var(--red-dark)); position:relative; display:flex; align-items:flex-end; padding:16px;}
+.event-date-badge{
+  background:#fff; color:var(--navy); border-radius:12px; padding:8px 12px; text-align:center; font-family:'Fraunces',serif;
+  position:absolute; top:16px; left:16px; box-shadow:var(--shadow); min-width:56px;
+}
+.event-date-badge b{display:block; font-size:20px; line-height:1;}
+.event-date-badge span{font-size:10px; text-transform:uppercase; letter-spacing:.06em;}
+.event-body{padding:24px;}
+.event-body h3{font-size:18px; margin:0 0 8px;}
+.event-meta{display:flex; gap:14px; font-size:13px; color:var(--text-soft); margin-bottom:12px; flex-wrap:wrap;}
+.event-meta span{display:flex; align-items:center; gap:6px;}
+.event-body p{font-size:14px; color:var(--text-soft); line-height:1.6; margin:0 0 18px;}
+
+.countdown-strip{
+  margin-top:50px; border-radius:24px; padding:34px; background:linear-gradient(120deg,var(--navy),var(--navy-2));
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; color:#fff; position:relative; overflow:hidden;
+}
+.countdown-strip::after{content:""; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg, rgba(200,16,46,.15) 0 2px, transparent 2px 22px);}
+.countdown-strip > *{position:relative; z-index:1;}
+.countdown-timer{display:flex; gap:14px;}
+.countdown-timer div{background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); border-radius:14px; padding:12px 16px; text-align:center; min-width:70px;}
+.countdown-timer b{font-family:'Fraunces',serif; font-size:26px; display:block;}
+.countdown-timer span{font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:#AEB8CF;}
+
+/* Gallery */
+.gallery-filters{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:40px;}
+.filter-btn{
+  padding:9px 18px; border-radius:100px; border:1.5px solid var(--border); background:var(--surface);
+  font-size:13.5px; font-weight:600; cursor:pointer; color:var(--text); transition:all .25s;
+}
+.filter-btn.active, .filter-btn:hover{background:var(--red); border-color:var(--red); color:#fff;}
+.masonry{column-count:4; column-gap:18px;}
+.g-item{break-inside:avoid; margin-bottom:18px; border-radius:18px; overflow:hidden; position:relative; cursor:pointer; box-shadow:var(--shadow);}
+.g-item .ph{width:100%; display:block; position:relative;}
+.g-item .ph-inner{width:100%; padding-bottom:var(--r,75%); background:linear-gradient(150deg,var(--navy-2),var(--red-dark));}
+.g-item .cap{position:absolute; inset:auto 0 0 0; padding:14px; background:linear-gradient(to top, rgba(0,0,0,.75), transparent); color:#fff; font-size:13px; font-weight:600; opacity:0; transition:opacity .3s;}
+.g-item:hover .cap{opacity:1;}
+.g-item:hover{transform:scale(1.02);}
+
+#lightbox{position:fixed; inset:0; background:rgba(4,7,15,.94); z-index:3000; display:none; align-items:center; justify-content:center; padding:40px;}
+#lightbox.active{display:flex;}
+#lightbox .lb-inner{max-width:800px; width:100%; text-align:center; position:relative;}
+#lightbox .lb-ph{width:100%; aspect-ratio:16/10; border-radius:20px; background:linear-gradient(150deg,var(--navy-2),var(--red-dark));}
+#lightbox .lb-cap{color:#fff; margin-top:16px; font-size:15px;}
+#lightbox .lb-close{position:absolute; top:-40px; right:0; color:#fff; font-size:28px; cursor:pointer; background:none; border:none;}
+
+/* Achievements */
+.achieve-section{background:linear-gradient(120deg,var(--navy),#081326); color:#fff; position:relative; overflow:hidden;}
+.achieve-section .dhaka-divider{position:absolute; top:0; left:0;}
+.stats-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:20px; text-align:center;}
+.stat-box b{font-family:'Fraunces',serif; font-size:clamp(34px,4vw,52px); display:block; color:var(--gold);}
+.stat-box span{font-size:13px; color:#AEB8CF; text-transform:uppercase; letter-spacing:.05em;}
+
+/* Team */
+.team-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
+.team-card{overflow:hidden; text-align:center; padding-bottom:24px;}
+.team-photo{aspect-ratio:1/1; background:linear-gradient(150deg,var(--navy-2),var(--red-dark)); position:relative;}
+.team-photo i{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:52px; color:rgba(255,255,255,.5);}
+.team-card h3{margin:20px 0 2px; font-size:17px;}
+.team-card .pos{color:var(--red); font-weight:700; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px;}
+.team-card p.bio{font-size:13.5px; color:var(--text-soft); padding:0 20px; line-height:1.6; margin-bottom:14px;}
+.team-social{display:flex; justify-content:center; gap:10px;}
+.team-social a{width:32px;height:32px;border-radius:50%;background:var(--surface-2); display:flex; align-items:center; justify-content:center; font-size:13px; text-decoration:none; color:var(--text); transition:all .25s;}
+.team-social a:hover{background:var(--red); color:#fff;}
+
+/* Testimonials */
+.testi-track{display:flex; gap:24px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory;}
+.testi-card{min-width:340px; scroll-snap-align:start; padding:30px; position:relative;}
+.testi-card i.quote{color:var(--red); font-size:26px; opacity:.4;}
+.testi-card p{font-size:15px; line-height:1.7; color:var(--text-soft); margin:14px 0 20px;}
+.testi-person{display:flex; align-items:center; gap:12px;}
+.testi-avatar{width:44px;height:44px;border-radius:50%; background:linear-gradient(135deg,var(--red),var(--navy)); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:15px;}
+.testi-person b{display:block; font-size:14.5px;}
+.testi-person span{font-size:12.5px; color:var(--text-soft);}
+
+/* News */
+.news-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+.news-card{overflow:hidden;}
+.news-img{height:180px; background:linear-gradient(135deg,var(--red-dark),var(--navy));}
+.news-body{padding:24px;}
+.news-tag{color:var(--red); font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em;}
+.news-body h3{font-size:17.5px; margin:10px 0; line-height:1.4;}
+.news-body p{font-size:14px; color:var(--text-soft); line-height:1.6; margin:0 0 16px;}
+.read-more{color:var(--red); font-weight:700; font-size:13.5px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;}
+.read-more i{transition:transform .25s;}
+.read-more:hover i{transform:translateX(4px);}
+
+/* Forms */
+.form-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+.form-field{display:flex; flex-direction:column; gap:7px; margin-bottom:4px;}
+.form-field.full{grid-column:1/-1;}
+.form-field label{font-size:13px; font-weight:600; color:var(--text-soft);}
+.form-field input, .form-field select, .form-field textarea{
+  padding:13px 15px; border-radius:12px; border:1.5px solid var(--border); background:var(--surface); color:var(--text);
+  font-family:'Inter',sans-serif; font-size:14.5px; outline:none; transition:border-color .25s;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus{border-color:var(--red);}
+.form-field .err{color:var(--red); font-size:12px; min-height:14px;}
+.form-field input.invalid, .form-field textarea.invalid{border-color:var(--red);}
+.checks{display:flex; flex-wrap:wrap; gap:10px;}
+.chip{padding:8px 14px; border-radius:100px; border:1.5px solid var(--border); font-size:13px; cursor:pointer; user-select:none; transition:all .2s;}
+.chip.on{background:var(--red); border-color:var(--red); color:#fff;}
+.form-success{display:none; background:#12341f; color:#8CE4A6; padding:16px 18px; border-radius:14px; font-size:14px; margin-top:16px; align-items:center; gap:10px;}
+.form-success.show{display:flex;}
+
+/* Join + Contact split */
+.join-wrap, .contact-wrap{display:grid; grid-template-columns:.9fr 1.1fr; gap:50px; align-items:start;}
+.side-panel{background:linear-gradient(150deg,var(--navy),var(--navy-2)); color:#fff; border-radius:26px; padding:40px; position:sticky; top:110px;}
+.side-panel h3{font-size:24px; margin:0 0 14px;}
+.side-panel p{color:#C9D2E3; font-size:14.5px; line-height:1.7; margin-bottom:24px;}
+.side-list{list-style:none; padding:0; margin:0 0 28px; display:flex; flex-direction:column; gap:14px;}
+.side-list li{display:flex; gap:12px; font-size:14px; color:#DDE3F0; align-items:flex-start;}
+.side-list i{color:var(--gold); margin-top:2px;}
+.contact-info{display:flex; flex-direction:column; gap:16px; margin-bottom:24px; padding:0;}
+.contact-info li{list-style:none; display:flex; gap:12px; font-size:14px; color:#DDE3F0;}
+.social-row{display:flex; gap:10px;}
+.social-row a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; transition:all .25s;}
+.social-row a:hover{background:var(--red); transform:translateY(-3px);}
+.map-wrap{border-radius:20px; overflow:hidden; margin-top:26px; border:1px solid var(--border);}
+
+/* CTA band */
+.cta-band{
+  border-radius:28px; padding:60px 50px; background:linear-gradient(120deg,var(--red),var(--red-dark)); color:#fff;
+  display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; position:relative; overflow:hidden;
+}
+.cta-band::before{content:""; position:absolute; right:-60px; top:-60px; width:220px; height:220px; border-radius:50%; background:rgba(255,255,255,.08);}
+.cta-band h3{font-size:clamp(24px,3vw,34px); margin:0 0 8px;}
+.cta-band p{color:#FFE1E6; margin:0; font-size:15px;}
+
+/* Footer */
+footer{background:#060B16; color:#AEB8CF; padding:70px 0 26px;}
+.footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px; padding-bottom:46px; border-bottom:1px solid rgba(255,255,255,.08);}
+footer h4{color:#fff; font-size:15px; margin:0 0 18px;}
+footer ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:11px;}
+footer a{color:#AEB8CF; text-decoration:none; font-size:14px; transition:color .2s;}
+footer a:hover{color:var(--gold);}
+.footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:22px; flex-wrap:wrap; gap:12px; font-size:13px;}
+.footer-legal{display:flex; gap:20px;}
+
+/* Back to top */
+#backTop{
+  position:fixed; bottom:28px; right:28px; width:48px; height:48px; border-radius:50%; background:var(--red); color:#fff;
+  border:none; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 12px 28px -8px rgba(200,16,46,.6);
+  opacity:0; pointer-events:none; transition:opacity .3s, transform .3s; z-index:900;
+}
+#backTop.show{opacity:1; pointer-events:auto;}
+#backTop:hover{transform:translateY(-4px);}
+
+/* Skip link */
+.skip-link{position:absolute; left:-999px; top:0; background:var(--red); color:#fff; padding:12px 18px; z-index:5000; border-radius:0 0 10px 0;}
+.skip-link:focus{left:0;}
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+/* Responsive */
+@media (max-width:1024px){
+  .about-grid, .join-wrap, .contact-wrap{grid-template-columns:1fr;}
+  .side-panel{position:static;}
+  .activities-grid{grid-template-columns:repeat(2,1fr);}
+  .events-grid{grid-template-columns:repeat(2,1fr);}
+  .team-grid{grid-template-columns:repeat(2,1fr);}
+  .news-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(3,1fr); row-gap:30px;}
+  .masonry{column-count:3;}
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-visual{display:none;}
+}
+@media (max-width:768px){
+  .nav-links, .nav-actions .btn{display:none;}
+  .hamburger{display:block;}
+  section{padding:80px 0;}
+  .activities-grid, .events-grid, .team-grid, .news-grid{grid-template-columns:1fr;}
+  .form-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .masonry{column-count:2;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .countdown-strip{flex-direction:column; align-items:flex-start;}
+}
+@media (max-width:480px){
+  .masonry{column-count:1;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .countdown-timer{flex-wrap:wrap;}
+}
+</style>
+</head>
+<body data-theme="light">
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============ NAV ============ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">BKS</span>
+      <span>BKS <span style="color:var(--red)">Club</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#team">Members</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="#join" class="btn btn-primary">Join Us</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#activities">Our Activities</a>
+  <a href="#events">Events</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#team">Members</a>
+  <a href="#news">News &amp; Blog</a>
+  <a href="#join">Join Us</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div id="search-panel">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search events, gallery, news…" aria-label="Search">
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" style="padding-bottom:0;">
+  <div class="hero-pattern"></div>
+  <svg class="hero-flags" viewBox="0 0 1240 40" preserveAspectRatio="none" width="100%" height="40" aria-hidden="true">
+    <line x1="0" y1="6" x2="1240" y2="6" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+    <g fill="var(--red)">
+      <path d="M40 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M140 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+      <path d="M240 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M340 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+      <path d="M440 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M540 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+      <path d="M640 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M740 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+      <path d="M840 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M940 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+      <path d="M1040 6 l16 0 l0 20 l-16 -10 z" opacity=".8"/>
+      <path d="M1140 6 l16 0 l0 20 l-16 -10 z" opacity=".6"/>
+    </g>
+  </svg>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Bhagni Khoj · Nepal</div>
+      <h1>BKS CLUB<span>Bhagni Khoj Sports Club</span></h1>
+      <div class="sub-title">Empowering Youth Through Sports, Culture &amp; Community Service</div>
+      <p class="desc">A youth-led movement preserving Nepali traditions while building tomorrow's leaders — one football match, one Deusi-Bhailo evening, one act of service at a time.</p>
+      <div class="hero-btns">
+        <a href="#join" class="btn btn-primary"><i class="fa-solid fa-hand-fist"></i> Join Our Club</a>
+        <a href="#activities" class="btn btn-outline"><i class="fa-solid fa-arrow-right"></i> View Activities</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b data-count="450">0</b><span>Members</span></div>
+        <div class="hero-stat"><b data-count="120">0</b><span>Matches Played</span></div>
+        <div class="hero-stat"><b data-count="9">0</b><span>Years of Service</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-badge">EST.<br>2016</div>
+        <div style="aspect-ratio:3/4; border-radius:18px; background:linear-gradient(160deg, rgba(200,16,46,.35), rgba(11,31,63,.6)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:14px; color:#fff;">
+          <i class="fa-solid fa-futbol" style="font-size:40px;"></i>
+          <i class="fa-solid fa-drum" style="font-size:34px; opacity:.8;"></i>
+          <div style="font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:#EADFC4; text-align:center; padding:0 20px;">"Sports for strength, culture for identity."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll<div class="dot"></div></div>
+</section>
+<div class="dhaka-divider"></div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <div class="eyebrow">About Us</div>
+      <h2>Rooted in tradition, driven by youth</h2>
+      <p style="color:var(--text-soft); font-size:16px; line-height:1.8; margin-top:16px;">
+        BKS CLUB (Bhagni Khoj Sports Club) is a youth-led cultural and sports organization dedicated to preserving Nepali traditions while promoting sportsmanship, leadership, and community engagement. Our club organizes Deusi-Bhailo celebrations, football tournaments, cultural programs, social service initiatives, and youth development activities to create a stronger and more united community.
+      </p>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3 style="margin:0; font-size:16px;">Our Mission</h3>
+          <ul>
+            <li>Preserve Nepali culture and traditions</li>
+            <li>Encourage youth participation in sports</li>
+            <li>Promote teamwork, leadership &amp; discipline</li>
+            <li>Organize community service &amp; awareness programs</li>
+          </ul>
+        </div>
+        <div class="mv-card">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <h3 style="margin:0; font-size:16px;">Our Vision</h3>
+          <p style="margin-top:10px; font-size:14.5px; color:var(--text-soft); line-height:1.7;">To become one of Nepal's leading youth clubs — inspiring cultural preservation, athletic excellence, and community development for generations to come.</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-art reveal">
+      <div style="text-align:center; color:#fff; padding:30px;">
+        <i class="fa-solid fa-people-group" style="font-size:60px; color:var(--gold); margin-bottom:18px;"></i>
+        <div style="font-family:'Fraunces',serif; font-size:22px; font-style:italic;">"Ek Samaj, Ek Team"</div>
+        <div style="font-size:13px; color:#C9D2E3; margin-top:8px; letter-spacing:.05em;">One Community, One Team</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITIES ============ -->
+<section id="activities" class="bg-surface">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">What We Do</div>
+      <h2>Our Activities</h2>
+      <p>From the streets of Bhagni Khoj to the football pitch — every program builds culture, character, and community.</p>
+    </div>
+    <div class="activities-grid reveal-stagger">
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-drum"></i></div><h3>Deusi-Bhailo Programs</h3><p>Traditional Tihar celebrations that carry Nepali folk culture to every doorstep.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-futbol"></i></div><h3>Football Tournaments</h3><p>Community leagues that build fitness, discipline, and local sporting talent.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-masks-theater"></i></div><h3>Cultural Festivals</h3><p>Dance, music, and heritage showcases that keep tradition alive for youth.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-hand-holding-heart"></i></div><h3>Community Service</h3><p>Clean-up drives, relief support, and neighbourhood improvement projects.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-people-arrows"></i></div><h3>Youth Leadership</h3><p>Mentorship and training programs that shape the club's next generation of leaders.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-dumbbell"></i></div><h3>Sports Training</h3><p>Structured coaching camps in football and athletics for all skill levels.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-bullhorn"></i></div><h3>Social Awareness</h3><p>Campaigns on health, education, and civic responsibility for the local community.</p></div>
+      <div class="card activity-card"><div class="activity-icon"><i class="fa-solid fa-gift"></i></div><h3>Charity Events</h3><p>Fundraisers and donation drives supporting families in need.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section id="events">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Save The Date</div>
+      <h2>Upcoming Events</h2>
+      <p>Join us at our next gathering — every event is open to members and the wider community.</p>
+    </div>
+    <div class="events-grid reveal-stagger">
+      <div class="card event-card">
+        <div class="event-img"><div class="event-date-badge"><b>15</b><span>Nov</span></div></div>
+        <div class="event-body">
+          <h3>Deusi-Bhailo Tihar Celebration</h3>
+          <div class="event-meta"><span><i class="fa-solid fa-location-dot"></i> Bhagni Khoj Chowk</span><span><i class="fa-regular fa-clock"></i> 5:00 PM</span></div>
+          <p>An evening of traditional songs, dance, and door-to-door Tihar blessings for the whole neighbourhood.</p>
+          <a href="#join" class="btn btn-primary" style="width:100%; justify-content:center;">Register</a>
+        </div>
+      </div>
+      <div class="card event-card">
+        <div class="event-img"><div class="event-date-badge"><b>02</b><span>Dec</span></div></div>
+        <div class="event-body">
+          <h3>BKS Winter Football Cup</h3>
+          <div class="event-meta"><span><i class="fa-solid fa-location-dot"></i> Community Ground</span><span><i class="fa-regular fa-clock"></i> 9:00 AM</span></div>
+          <p>Our flagship annual tournament featuring 16 local teams competing for the BKS Cup.</p>
+          <a href="#join" class="btn btn-primary" style="width:100%; justify-content:center;">Register</a>
+        </div>
+      </div>
+      <div class="card event-card">
+        <div class="event-img"><div class="event-date-badge"><b>20</b><span>Dec</span></div></div>
+        <div class="event-body">
+          <h3>Winter Charity Drive</h3>
+          <div class="event-meta"><span><i class="fa-solid fa-location-dot"></i> Club Hall</span><span><i class="fa-regular fa-clock"></i> 10:00 AM</span></div>
+          <p>Distribution of warm clothes and essentials to underprivileged families ahead of winter.</p>
+          <a href="#join" class="btn btn-primary" style="width:100%; justify-content:center;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="countdown-strip reveal">
+      <div>
+        <div class="eyebrow" style="color:var(--gold);">Next Up</div>
+        <h3 style="margin:8px 0 4px; font-size:22px; color:#fff;">Deusi-Bhailo Tihar Celebration</h3>
+        <p style="margin:0; color:#C9D2E3; font-size:14px;">Bhagni Khoj Chowk · Nov 15, 5:00 PM</p>
+      </div>
+      <div class="countdown-timer" id="countdown">
+        <div><b id="cd-days">00</b><span>Days</span></div>
+        <div><b id="cd-hours">00</b><span>Hours</span></div>
+        <div><b id="cd-min">00</b><span>Min</span></div>
+        <div><b id="cd-sec">00</b><span>Sec</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="bg-surface">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Moments</div>
+      <h2>Gallery</h2>
+      <p>A glimpse into our matches, festivals, and service days.</p>
+    </div>
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="football">Football</button>
+      <button class="filter-btn" data-filter="deusi">Deusi-Bhailo</button>
+      <button class="filter-btn" data-filter="culture">Cultural Programs</button>
+      <button class="filter-btn" data-filter="service">Community Service</button>
+      <button class="filter-btn" data-filter="celebration">Celebrations</button>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements" class="achieve-section">
+  <div class="dhaka-divider"></div>
+  <div class="container" style="padding-top:20px;">
+    <div class="section-head reveal" style="max-width:640px;">
+      <div class="eyebrow" style="color:var(--gold);">By The Numbers</div>
+      <h2 style="color:#fff;">Our Achievements</h2>
+      <p style="color:#C9D2E3;">Nine years of building community, one milestone at a time.</p>
+    </div>
+    <div class="stats-grid reveal-stagger">
+      <div class="stat-box"><b data-count="450">0</b><span>Members</span></div>
+      <div class="stat-box"><b data-count="120">0</b><span>Matches Played</span></div>
+      <div class="stat-box"><b data-count="65">0</b><span>Cultural Events</span></div>
+      <div class="stat-box"><b data-count="800">0</b><span>Volunteers</span></div>
+      <div class="stat-box"><b data-count="9">0</b><span>Years of Service</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The People Behind BKS</div>
+      <h2>Our Team</h2>
+      <p>Volunteers and leaders who make every event and initiative possible.</p>
+    </div>
+    <div class="team-grid reveal-stagger">
+      <div class="card team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Pradeep Chaudhary</h3><div class="pos">President</div>
+        <p class="bio">Leads club strategy and community partnerships, with 9 years at BKS.</p>
+        <div class="team-social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Sumit Chaudhary</h3><div class="pos">Cultural Coordinator</div>
+        <p class="bio">Organizes Deusi-Bhailo and festival programs, preserving folk traditions.</p>
+        <div class="team-social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Samir Chaudhary</h3><div class="pos">Sports Director</div>
+        <p class="bio">Coaches the football program and runs the annual tournament.</p>
+        <div class="team-social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Hritik Chaudhary</h3><div class="pos">Volunteer Lead</div>
+        <p class="bio">Coordinates community service days and charity drives across the ward.</p>
+        <div class="team-social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="bg-surface">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Voices</div>
+      <h2>What People Say</h2>
+      <p>Stories from members and the community BKS Club serves.</p>
+    </div>
+    <div class="testi-track reveal">
+      <div class="card testi-card"><i class="fa-solid fa-quote-left quote"></i><p>BKS Club gave me a second family. The football program taught me discipline that carried into my studies.</p><div class="testi-person"><div class="testi-avatar">RS</div><div><b>Ramesh Shahi</b><span>Member since 2019</span></div></div></div>
+      <div class="card testi-card"><i class="fa-solid fa-quote-left quote"></i><p>Every Tihar, their Deusi-Bhailo evening is the highlight of our street. They keep our traditions alive.</p><div class="testi-person"><div class="testi-avatar">GM</div><div><b>Gita Maharjan</b><span>Community Member</span></div></div></div>
+      <div class="card testi-card"><i class="fa-solid fa-quote-left quote"></i><p>As a volunteer, I've never seen an organization this committed to service and youth development.</p><div class="testi-person"><div class="testi-avatar">PK</div><div><b>Prakash KC</b><span>Volunteer</span></div></div></div>
+      <div class="card testi-card"><i class="fa-solid fa-quote-left quote"></i><p>My daughter joined the youth leadership program and has grown so much in confidence.</p><div class="testi-person"><div class="testi-avatar">SL</div><div><b>Sabina Lama</b><span>Parent</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section id="news">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Latest Updates</div>
+      <h2>News &amp; Blog</h2>
+      <p>Stories, recaps, and announcements from around the club.</p>
+    </div>
+    <div class="news-grid reveal-stagger">
+      <article class="card news-card"><div class="news-img"></div><div class="news-body"><span class="news-tag">Football</span><h3>BKS Wins Regional Youth Cup Final</h3><p>Our under-19 squad brought home the trophy after a thrilling penalty shootout.</p><a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article class="card news-card"><div class="news-img"></div><div class="news-body"><span class="news-tag">Culture</span><h3>Tihar Season: Meet Our Deusi Team</h3><p>Behind the scenes with the performers keeping folk tradition alive this Tihar.</p><a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article class="card news-card"><div class="news-img"></div><div class="news-body"><span class="news-tag">Community</span><h3>500 Trees Planted in Ward Clean-Up Drive</h3><p>Volunteers came together for our biggest environmental initiative yet.</p><a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN US ============ -->
+<section id="join" class="bg-surface">
+  <div class="container join-wrap">
+    <div class="side-panel reveal">
+      <h3>Become a Member</h3>
+      <p>Membership is free and open to all youth in the community. Fill out the form and our team will reach out within 3 working days.</p>
+      <ul class="side-list">
+        <li><i class="fa-solid fa-check"></i> Access to football training &amp; tournaments</li>
+        <li><i class="fa-solid fa-check"></i> Participation in cultural programs</li>
+        <li><i class="fa-solid fa-check"></i> Leadership &amp; volunteering opportunities</li>
+        <li><i class="fa-solid fa-check"></i> Community &amp; lifelong friendships</li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="card reveal" style="padding:40px;">
+      <form id="joinForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field"><label for="jFullname">Full Name</label><input type="text" id="jFullname" name="fullname" placeholder="e.g. Sita Rana" required><span class="err" id="err-jFullname"></span></div>
+          <div class="form-field"><label for="jEmail">Email</label><input type="email" id="jEmail" name="email" placeholder="you@example.com" required><span class="err" id="err-jEmail"></span></div>
+          <div class="form-field"><label for="jPhone">Phone Number</label><input type="tel" id="jPhone" name="phone" placeholder="98XXXXXXXX" required><span class="err" id="err-jPhone"></span></div>
+          <div class="form-field"><label for="jAge">Age</label><input type="number" id="jAge" name="age" min="5" max="90" placeholder="18" required><span class="err" id="err-jAge"></span></div>
+          <div class="form-field full"><label for="jAddress">Address</label><input type="text" id="jAddress" name="address" placeholder="Ward No., Municipality, District" required><span class="err" id="err-jAddress"></span></div>
+          <div class="form-field full">
+            <label>Interests</label>
+            <div class="checks" id="interestChips">
+              <div class="chip" data-val="Football">Football</div>
+              <div class="chip" data-val="Deusi-Bhailo">Deusi-Bhailo</div>
+              <div class="chip" data-val="Cultural Programs">Cultural Programs</div>
+              <div class="chip" data-val="Volunteering">Volunteering</div>
+              <div class="chip" data-val="Leadership">Leadership</div>
+            </div>
+            <span class="err" id="err-interests"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px; width:100%; justify-content:center;">Submit Application</button>
+        <div class="form-success" id="joinSuccess"><i class="fa-solid fa-circle-check"></i> Thank you! Your membership application has been received.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="container contact-wrap">
+    <div class="side-panel reveal">
+      <h3>Get In Touch</h3>
+      <p>Have a question or want to partner with us? Reach out any time.</p>
+      <ul class="contact-info">
+        <li><i class="fa-solid fa-location-dot" style="color:var(--gold); margin-top:2px;"></i> Bhagni Khoj, Kathmandu, Nepal</li>
+        <li><i class="fa-solid fa-phone" style="color:var(--gold); margin-top:2px;"></i> +977 98X-XXXXXXX</li>
+        <li><i class="fa-solid fa-envelope" style="color:var(--gold); margin-top:2px;"></i> info@bksclub.org.np</li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="map-wrap">
+        <iframe title="BKS Club Location Map" src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed" width="100%" height="220" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="card reveal" style="padding:40px;">
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field"><label for="cName">Full Name</label><input type="text" id="cName" name="name" placeholder="Your name" required><span class="err" id="err-cName"></span></div>
+          <div class="form-field"><label for="cEmail">Email</label><input type="email" id="cEmail" name="email" placeholder="you@example.com" required><span class="err" id="err-cEmail"></span></div>
+          <div class="form-field full"><label for="cSubject">Subject</label><input type="text" id="cSubject" name="subject" placeholder="How can we help?" required><span class="err" id="err-cSubject"></span></div>
+          <div class="form-field full"><label for="cMessage">Message</label><textarea id="cMessage" name="message" rows="5" placeholder="Write your message…" required></textarea><span class="err" id="err-cMessage"></span></div>
+        </div>
+        <button type="submit" class="btn btn-navy" style="margin-top:10px; width:100%; justify-content:center;">Send Message</button>
+        <div class="form-success" id="contactSuccess"><i class="fa-solid fa-circle-check"></i> Message sent! We'll get back to you shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Ready to be part of something bigger?</h3>
+        <p>Membership is free — bring your energy, we'll bring the community.</p>
+      </div>
+      <a href="#join" class="btn" style="background:#fff; color:var(--red);">Join Our Club <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff; margin-bottom:14px;"><span class="logo-mark">BKS</span><span>BKS Club</span></div>
+        <p style="font-size:14px; line-height:1.7; color:#8B93A8;">Bhagni Khoj Sports Club is a youth-led non-profit preserving Nepali culture and promoting sportsmanship since 2016.</p>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#activities">Activities</a></li><li><a href="#events">Events</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#join">Join Us</a></li></ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#achievements">Achievements</a></li><li><a href="#team">Members</a></li><li><a href="#news">News &amp; Blog</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i>&nbsp; Bhagni Khoj, Kathmandu, Nepal</li>
+          <li><i class="fa-solid fa-phone"></i>&nbsp; +977 98X-XXXXXXX</li>
+          <li><i class="fa-solid fa-envelope"></i>&nbsp; info@bksclub.org.np</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> BKS Club (Bhagni Khoj Sports Club). All rights reserved.</span>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="lightbox"></div>
+
+<script>
+/* ===== YEAR ===== */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ===== THEME TOGGLE (in-memory only) ===== */
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const body = document.body;
+  const isDark = body.getAttribute('data-theme') === 'dark';
+  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  themeToggle.innerHTML = isDark ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+});
+
+/* ===== MOBILE MENU ===== */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburgerBtn.addEventListener('click', () => {
+  const open = mobileMenu.style.display === 'flex';
+  mobileMenu.style.display = open ? 'none' : 'flex';
+  hamburgerBtn.innerHTML = open ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  hamburgerBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+}));
+
+/* ===== STICKY NAV SHADOW ===== */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.style.boxShadow = window.scrollY > 20 ? '0 8px 20px -12px rgba(0,0,0,.25)' : 'none';
+  document.getElementById('backTop').classList.toggle('show', window.scrollY > 500);
+});
+
+/* ===== BACK TO TOP ===== */
+document.getElementById('backTop').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+/* ===== SCROLL REVEAL ===== */
+const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.15});
+revealEls.forEach(el => io.observe(el));
+
+/* ===== ANIMATED COUNTERS ===== */
+function animateCounter(el){
+  const target = +el.getAttribute('data-count');
+  const duration = 1600;
+  const start = performance.now();
+  function tick(now){
+    const p = Math.min((now-start)/duration, 1);
+    const eased = 1 - Math.pow(1-p, 3);
+    el.textContent = Math.floor(eased * target);
+    if(p < 1) requestAnimationFrame(tick); else el.textContent = target;
+  }
+  requestAnimationFrame(tick);
+}
+const counters = document.querySelectorAll('[data-count]');
+const counterIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ animateCounter(e.target); counterIO.unobserve(e.target); } });
+}, {threshold:.5});
+counters.forEach(c => counterIO.observe(c));
+
+/* ===== COUNTDOWN TIMER (next event: Nov 15) ===== */
+function getNextEventDate(){
+  const now = new Date();
+  let target = new Date(now.getFullYear(), 10, 15, 17, 0, 0); // Nov=10
+  if(target < now) target = new Date(now.getFullYear()+1, 10, 15, 17, 0, 0);
+  return target;
+}
+const eventDate = getNextEventDate();
+function updateCountdown(){
+  const now = new Date();
+  let diff = eventDate - now;
+  if(diff < 0) diff = 0;
+  const d = Math.floor(diff/(1000*60*60*24));
+  const h = Math.floor((diff/(1000*60*60))%24);
+  const m = Math.floor((diff/(1000*60))%60);
+  const s = Math.floor((diff/1000)%60);
+  document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+  document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-min').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-sec').textContent = String(s).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* ===== GALLERY DATA + MASONRY + FILTER ===== */
+const galleryData = [
+  {cat:'football', title:'Winter Cup Final', r:'80%'},
+  {cat:'deusi', title:'Deusi-Bhailo Night', r:'120%'},
+  {cat:'culture', title:'Teej Dance Program', r:'70%'},
+  {cat:'service', title:'Ward Clean-Up Drive', r:'95%'},
+  {cat:'celebration', title:'Annual Day 2025', r:'75%'},
+  {cat:'football', title:'U-19 Training Camp', r:'110%'},
+  {cat:'deusi', title:'Tihar Street Performance', r:'85%'},
+  {cat:'culture', title:'Folk Music Evening', r:'100%'},
+  {cat:'service', title:'Blood Donation Camp', r:'75%'},
+  {cat:'football', title:'Community League Match', r:'90%'},
+  {cat:'celebration', title:'New Member Welcome', r:'65%'},
+  {cat:'service', title:'Tree Plantation Day', r:'105%'},
+];
+const masonry = document.getElementById('masonry');
+function renderGallery(filter){
+  masonry.innerHTML = '';
+  galleryData.forEach((item, i) => {
+    if(filter !== 'all' && item.cat !== filter) return;
+    const div = document.createElement('div');
+    div.className = 'g-item';
+    div.setAttribute('data-index', i);
+    div.innerHTML = `<div class="ph"><div class="ph-inner" style="--r:${item.r}"></div><div class="cap">${item.title}</div></div>`;
+    div.addEventListener('click', () => openLightbox(item));
+    masonry.appendChild(div);
+  });
+}
+renderGallery('all');
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderGallery(btn.getAttribute('data-filter'));
+  });
+});
+
+/* ===== LIGHTBOX ===== */
+const lightbox = document.getElementById('lightbox');
+function openLightbox(item){
+  lightbox.innerHTML = `
+    <div class="lb-inner">
+      <button class="lb-close" aria-label="Close">&times;</button>
+      <div class="lb-ph"></div>
+      <div class="lb-cap">${item.title} — <span style="text-transform:capitalize; opacity:.7;">${item.cat.replace('-',' ')}</span></div>
+    </div>`;
+  lightbox.classList.add('active');
+  lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.classList.remove('active'));
+}
+lightbox.addEventListener('click', (e) => { if(e.target === lightbox) lightbox.classList.remove('active'); });
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape') lightbox.classList.remove('active'); });
+
+/* ===== INTEREST CHIPS ===== */
+const chips = document.querySelectorAll('#interestChips .chip');
+chips.forEach(chip => chip.addEventListener('click', () => chip.classList.toggle('on')));
+
+/* ===== FORM VALIDATION ===== */
+function validateField(input, errEl, validator, msg){
+  const ok = validator(input.value.trim());
+  input.classList.toggle('invalid', !ok);
+  errEl.textContent = ok ? '' : msg;
+  return ok;
+}
+const isNotEmpty = v => v.length > 0;
+const isEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+const isPhone = v => /^[0-9+\-\s]{7,15}$/.test(v);
+const isAge = v => +v >= 5 && +v <= 90;
+
+document.getElementById('joinForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = this;
+  let valid = true;
+  valid = validateField(f.fullname, document.getElementById('err-jFullname'), isNotEmpty, 'Please enter your full name.') && valid;
+  valid = validateField(f.email, document.getElementById('err-jEmail'), isEmail, 'Please enter a valid email.') && valid;
+  valid = validateField(f.phone, document.getElementById('err-jPhone'), isPhone, 'Please enter a valid phone number.') && valid;
+  valid = validateField(f.age, document.getElementById('err-jAge'), isAge, 'Age must be between 5 and 90.') && valid;
+  valid = validateField(f.address, document.getElementById('err-jAddress'), isNotEmpty, 'Please enter your address.') && valid;
+  const selected = document.querySelectorAll('#interestChips .chip.on');
+  const interestsErr = document.getElementById('err-interests');
+  if(selected.length === 0){ interestsErr.textContent = 'Select at least one interest.'; valid = false; }
+  else{ interestsErr.textContent = ''; }
+
+  if(valid){
+    document.getElementById('joinSuccess').classList.add('show');
+    f.reset();
+    chips.forEach(c => c.classList.remove('on'));
+    setTimeout(() => document.getElementById('joinSuccess').classList.remove('show'), 5000);
+  }
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = this;
+  let valid = true;
+  valid = validateField(f.name, document.getElementById('err-cName'), isNotEmpty, 'Please enter your name.') && valid;
+  valid = validateField(f.email, document.getElementById('err-cEmail'), isEmail, 'Please enter a valid email.') && valid;
+  valid = validateField(f.subject, document.getElementById('err-cSubject'), isNotEmpty, 'Please enter a subject.') && valid;
+  valid = validateField(f.message, document.getElementById('err-cMessage'), isNotEmpty, 'Please enter a message.') && valid;
+  if(valid){
+    document.getElementById('contactSuccess').classList.add('show');
+    f.reset();
+    setTimeout(() => document.getElementById('contactSuccess').classList.remove('show'), 5000);
+  }
+});
+
+/* ===== SEARCH ===== */
+const searchIndex = [
+  {title:'About Us', href:'#about'}, {title:'Our Activities', href:'#activities'},
+  {title:'Upcoming Events', href:'#events'}, {title:'Deusi-Bhailo Tihar Celebration', href:'#events'},
+  {title:'BKS Winter Football Cup', href:'#events'}, {title:'Gallery', href:'#gallery'},
+  {title:'Achievements', href:'#achievements'}, {title:'Our Team', href:'#team'},
+  {title:'News & Blog', href:'#news'}, {title:'BKS Wins Regional Youth Cup Final', href:'#news'},
+  {title:'Join Us', href:'#join'}, {title:'Contact', href:'#contact'},
+];
+const searchBtn = document.getElementById('searchBtn');
+const searchPanel = document.getElementById('search-panel');
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('search-results');
+searchBtn.addEventListener('click', () => { searchPanel.classList.add('active'); searchInput.focus(); });
+searchPanel.addEventListener('click', (e) => { if(e.target === searchPanel) searchPanel.classList.remove('active'); });
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape') searchPanel.classList.remove('active'); });
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  searchResults.innerHTML = '';
+  if(!q) return;
+  searchIndex.filter(i => i.title.toLowerCase().includes(q)).forEach(i => {
+    const a = document.createElement('a');
+    a.href = i.href; a.textContent = i.title;
+    a.addEventListener('click', () => searchPanel.classList.remove('active'));
+    searchResults.appendChild(a);
+  });
+  if(searchResults.children.length === 0){
+    searchResults.innerHTML = '<div style="padding:10px 12px; color:var(--text-soft); font-size:14px;">No results found.</div>';
+  }
+});
+</script>
+</body>
+</html>
